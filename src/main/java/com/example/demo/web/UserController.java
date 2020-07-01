@@ -14,7 +14,7 @@ public class UserController {
 
 	@PostMapping("/create")
 	public String create(User user) {
-		System.out.println("User : " + user);
+		// System.out.println("User : " + user);
 		users.add(user);
 		return "redirect:/list";
 	}
